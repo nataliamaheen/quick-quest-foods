@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <!-- <link rel="style" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="style" href="css/font-awesome.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        *{
+    font-family: var(--main-font);
+}
+        :root{
+            --main-font:'Pacifico', cursive;
+        }
+        .about-section{
+          width: 100%;
+          background: #FCE77D !important;
+          padding: 40px 0;
+        }
+        .inner-width{
+          max-width: 1000px;
+          overflow: hidden;
+          padding: 0 20px;
+          margin: auto;
+
+        }
+        .about-section h1{
+          text-align: center;
+        }
+        .border{
+          width: 100px;
+          height: 3px;
+          background: red;
+          margin: 40px auto;
+        }
+        .about-section-row{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .about-section-col{
+          flex: 50%;
+        }
+        .about{
+          padding-right: 30px;
+        }
+        .skills{
+          padding-left: 30px;
+        }
+        .about p{
+          text-align: justify;
+          margin-bottom: 20px;
+        }
+       .about a{
+         display:inline-block;
+         color: red;
+         text-decoration:none;
+         border: 2px solid red;
+         border-radius: 24px;
+         padding: 8px 40px;
+         transition: 0.4s linear;
+       }
+       .about a :hover{
+         color:red;
+         background-color:red;
+       }
+       .skill{
+         margin-bottom: 10px;
+       }
+       .progress{
+         width: 100%;
+         height: 12px;
+         background:red; 
+         color: #FFCA28;
+         border-radius: 12px;
+       }
+       .progress-bar{
+        
+         height: 12px;
+         background: red;
+         border-radius: 12px;
+
+       }
+       .progress-bar span{
+         float: right;
+         margin-right: 6px;
+         line-height: 13px;
+         color: #fff;
+         font-size: 12px;
+       }
+       .p1{
+         width: 90%;
+       }
+       .p2{
+      width: 70%;
+       }
+       .p3{
+         width: 50%;
+       }
+       @media screen and (max-width:700px){
+         .about-section-col{
+           flex: 100%;
+           margin: 10px 0;
+         }
+         .about, .skills{
+           padding: 0;
+         }.about{
+           text-align: center;
+         }
+         
+       }
+
+
+
+        .boxes{
+    width: 90%;
+    padding: 10px;
+    background:orange;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+}
+.page-footer{
+    background-color: #FFCA28;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    /* float: left; */
+margin: 0px 10px;
+transition: 1s;
+
+}
+.box:hover{
+    transform: scale(1.3);
+    background: #ff800a;
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2;
+}
+.footer{
+    
+    background-color:#FFCA28 ;
+    
+}
+.navbar{
+    background-color:#FFCA28 
+}
+
+    </style>
+</head>
+<body class="container" >
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <a class="navbar-brand" href="#"> <img style="height: 80px; " src="images/delivery.png">    Quick Quest Foods</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+     
+     
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="foods.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Registration.html">Registration </a>
+          </li>
+        </ul>
+      
+    </div>
+  </nav>
+  <div class="about-section">
+    <div class="inner-width">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+      <h1>Introduction</h1></div> </div>
+      <div class="border" style="background: red;"></div>
+      <div class="about-section-row">
+        <div class="about-section-col">
+          <div class="about">
+            <!-- <img src="images/girl.jpg" width="100%" height="100px"> -->
+            <p > <br><b>Asslamoalikum....!<br>My Name is<span style="color: blue; text-decoration: underline;"> Natalia </span> <br> I am a Student of BSCS But during my studies i started my own favourite bussiness.<br> I  love cooking my whole life.<br> Cooking is my job and my passion.<br> I am lucky to be a person who loves his job. <br>I live in Pakistan.I know 4 different language. I am sure you will enjoy the food I cook for you from my own home.</b>
+            </b>
+        
+     
+     
+           
+     
+     </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="about-section-col">
+          <div class="skills">
+            <div class="skill">
+              <h1>skills</h1>
+              <div class="title">Cooking</div>
+              <div class="progress">
+                <div class="progress-bar p1"> <span>90%</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="skills">
+            <div class="skill">
+              <div class="title">Baking</div>
+              <div class="progress">
+                <div class="progress-bar p2"><span>70%</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="skills">
+            <div class="skill">
+              <div class="title">Table Managment & Reservation</div>
+              <div class="progress">
+                <div class="progress-bar p3"><span>50%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- <div class="container  py-5"> -->
+      <!-- <div class="about-section">
+        <div class="inner-container">
+          <h1>About Homechef</h1>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, at. Perferendis repudiandae, enim obcaecati non magni sed optio aliquam recusandae eaque cumque ipsum iusto ut dignissimos officia itaque? Eaque, quas?
+            Voluptatum cumque et in distinctio eaque nemo ex quos aperiam excepturi odit. Nobis, sint ipsum. Dolore, labore delectus animi reprehenderit pariatur rem iure debitis. Porro officiis similique repellat recusandae sequi.
+            Dicta facilis similique consequatur nemo, blanditiis asperiores ab consequuntur fugit quam quasi voluptatem quaerat hic nulla id eveniet quae! Totam, minima eos. Alias dolore vitae soluta odit praesentium repudiandae inventore.
+          </p>
+          <div class="skill">
+            <span>Cooking</span>
+            <span>Table managment</span>
+            <span>Hotel Reservation</span>
+          </div>
+        </div>
+
+      </div> -->
+      
+      
+     <!-- <div class="row py-5 " >
+       <div class="col-xs-12 col-sm-6 col-lg-4">
+        <h1 style="text-align: center; color: red; text-decoration: underline;">About HomeChef </h1>
+      </div>
+      
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+                   <p style="text-align: justify; text-align: center; background-color: #FFCA28; color: red; margin: 30px 30px 30px 30px;"><img src="images/girl.jpg" height="100px" width="200px" style="margin-top: 30px; text-align: center;"> <br><b>Asslamoalikum....!<br>My Name is<span style="color: blue; text-decoration: underline;"> Natalia </span> <br> I am a Student of BSCS But during my studies i started my own favourite bussiness.<br> I  love cooking my whole life.<br> Cooking is my job and my passion.<br> I am lucky to be a person who loves his job. <br>I live in Pakistan.I know 4 different language. I am sure you will enjoy the food I cook for you from my own home.</b>
+                        </b>
+                    
+                 
+                 
+                      </div> 
+                 
+                 </p>
+               </div>
+         </div> <br><br><br> -->
+         <!-- <h1 style="text-align: center; "><span style="color: orange;">Most</span> <span style="color: red;">Recently</span> <Span style="color: royalblue;"> Used Foods </Span></h1>
+         <div class="row">
+         <div class="boxes">
+             
+            <div class="box">
+                <img height="200px" width="200px" src="images/biryani.png">
+            </div>
+            <div class="box">
+                <img height="200px" width="200px" src="images/fries.png">
+            </div>
+            <div class="box">
+                <img height="200px" width="200px" src="images/paratha.jpg">
+            </div>
+            <div class="box">
+                <img height="200px" width="200px" src="images/raita.webp">
+            </div>
+            <div class="box">
+                 <img height="200px" width="200px" src="images/rolls.png">
+            </div>
+
+
+             </div> -->
+             <!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Quick Quest Foods</h5>
+        <p style="color: red;">An online food ordering website for delivery, collection and executive dine-in. Order your favorite meal online from hundreds of restaurants in Pakistan.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About Website</h5>
+
+        <ul class="list-unstyled ">
+          <li >
+            <a href="index.html" style="color: red;">Home</a>
+          </li>
+          <li  >
+            <a href="about.html" style="color: red;">About Us</a>
+          </li>
+          <li >
+            <a href="foods.html"style="color: red;" >Menu</a>
+          </li>
+          <li >
+            <a href="contactus.html" style="color: red;">Contact us</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Resturant Services</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="login.html" style="color: red;">Food Delivery</a>
+          </li>
+          <li>
+            <a href="foods.html" style="color: red;">Foods For Takeaway</a>
+          </li>
+          <li>
+            <a href="login.html" style="color: red;">Online Delivery</a>
+          </li>
+         
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Need Help</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="contactus.html" style="color: red;">Contact Us</a>
+          </li>
+          <li>
+            <a href="#!" style="color: red;">Referral FAQs</a>
+          </li>
+          <li>
+            <a href="#!" style="color: red;">FAQs</a>
+          </li>
+          
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr>
+
+  <!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Register for free</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="Registration.html" class="btn btn-danger btn-rounded">Sign up!</a>
+    </li>
+  </ul>
+  <!-- Call to action -->
+
+  <hr>
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1">
+        <i class="fab fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1">
+        <i class="fab fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1">
+        <i class="fab fa-google-plus-g"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-li mx-1">
+        <i class="fab fa-linkedin-in"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-dribbble mx-1">
+        <i class="fab fa-dribbble"> </i>
+      </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+  Quick Quest Foods
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+           
+    
+</body>
+</html>

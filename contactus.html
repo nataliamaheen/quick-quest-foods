@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        *{
+font-family: var(--main-font);
+}
+
+        :root{
+    --main-font:'Pacifico', cursive;
+}
+      .body{
+        margin: 0;
+        padding: 0;
+      
+      }
+      .contact-form{
+        width: 85%;
+        max-width: 600px;
+        background: #FCE77D !important;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px 40px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 0 20px #000000b3;
+      }
+      .contact-form h1{
+        margin-top: 0;
+        font-weight: 200;
+        color: red;
+      }
+      .txtb{
+        border: 1px solid red;
+        margin: 8px 0;
+        padding: 12px 18px;
+        border-radius: 8px;
+      }
+      .txtb label{
+        display: block;
+        text-align: left;
+        color: red;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+      .txtb input, .txtb textarea{
+        width: 100%;
+        border: none;
+        background: none;
+        outline: none;
+        font-size: 18px;
+        margin-top: 6px;
+           color: red;
+
+      }
+      .btn{
+        display: block;
+        background: #FFCA28;
+        padding: 14px 0px;
+        color: red;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-top: 8px;
+        width: 100%;
+      }
+      ::placeholder{
+        color: red;
+      }
+.navbar{
+    background-color:#FFCA28 
+}
+.seprator{
+    width: 70px;
+    height: 3px;
+    background-color:red;
+    display: block;
+}
+.contact-div i{
+    width:30px;
+    height:30px;
+    padding:9px 7px;
+    color:white;
+    background-color:#f33535;
+    border-radius:100%;
+}
+    </style>
+</head>
+<body class="container">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="#"> <img style="height: 80px; " src="images/delivery.png">    Quick Quest Foods</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+         
+         
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="foods.html">Menu</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Registration.html">Registration </a>
+              </li>
+            </ul>
+          
+        </div>
+      </nav>
+    <div class="contact-form">
+      <h1>Conatct Us</h1>
+      <div class="txtb">
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your  Name" required>
+      </div>
+      <div class="txtb">
+        <label>Email</label>
+        <input type="text" placeholder="Enter your Email Address" required>
+          </div>
+          <div class="txtb">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter your Number" required>
+              </div>
+              <div class="txtb">
+                <label>Message</label>
+                <textarea ></textarea>
+                  </div>
+                  <a class="btn " style="  display: block;
+                  background: #FFCA28;
+                  padding: 14px 0px;
+                  color: red;
+                  text-transform: uppercase;
+                  cursor: pointer;
+                  margin-top: 8px;
+                  width: 100%;">
+                    <button style="color: red; background:#FFCA28;">Send</button></a>
+    </div>
+    
+
+    
+   
+   
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</body>
+</html>

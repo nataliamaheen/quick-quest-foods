@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foods</title>
+  <link href="css/bootstrap.min.css">
+  <link href="css/bootstrap.css">
+  <!-- <link href="css/font-awesome.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.body{
+  background: #FCE77D !important;
+}
+    * {
+      font-family: var(--main-font);
+    }
+
+    :root {
+      --main-font: 'Pacifico', cursive;
+    }
+
+    .header {
+      background-color: #FFCA28;
+      text-align: center;
+      color: red;
+    }
+
+    .navbar {
+      background-color: #FFCA28
+    }
+
+
+
+    .foods {
+      margin-top: 30px;
+    }
+
+    .card {
+      width: 100px;
+      height: auto !important;
+      display: inline-block;
+      margin: 0px 10px 100px 0px;
+      background-color: #FFCA28 !important;
+      margin-bottom: 5px;
+
+
+
+    }
+
+    .card-title {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .card-text {
+      font-weight: bold;
+      margin-left: 50px;
+    }
+
+    .btn-primary {
+      width: 250px;
+      background-color: red !important;
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: 150px;
+    }
+
+    .btn-block {
+      background-color: #FFCA28;
+    }
+
+    .card-title {
+      color: red;
+    }
+
+    .card-text {
+      color: red;
+    }
+
+    .page-footer {
+      background-color: #FFCA28;
+    }
+    .button a i{
+      color: red;
+    }
+  </style>
+
+</head>
+
+<body class="container">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <a class="navbar-brand" href="#"> <img style="height: 80px; " src="images/delivery.png"> Quick Quest Foods</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="foods.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Registration.html">Registration </a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <div class="conatiner">
+    <div class="row my-5">
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img ">
+        <img src=" images/chicken biryani.jpg" width="180px">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Chicken Biryani <br>Rs:/ 150</p>
+        </div>
+        <div class="button btn btn-primary">
+          
+          <button>
+            <a href="">
+              <i class="fa fa-cart-arrow-down mt-1"></i>
+          </a>
+            Add To Cart </button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/rice.png" width="220px">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Fried Rice <br>Rs:/ 200</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button>
+            <a href="">
+              <i class="fa fa-cart-arrow-down mt-1"></i>
+          </a>
+            Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/spaghetti.png" width="250px">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Chicken Spaghetti<br>Rs:/ 150</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button>
+            <a href="">
+              <i class="fa fa-cart-arrow-down mt-1"></i>
+          </a>
+            Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/NOODLLE.jpg" width="170px">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Chicken Noodle <br>Rs:/ 150</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button>
+            <a href="">
+              <i class="fa fa-cart-arrow-down mt-1"></i>
+          </a>
+            Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/macroni.png" width="250px" class="dishes">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Chicken Macroni <br>Rs:/ 150</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button>
+            <a href="">
+              <i class="fa fa-cart-arrow-down mt-1"></i>
+          </a>
+            Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/rolls.png" width="250px" class="dishes">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Potato Rolls <br>Rs:/ 100</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button>
+            <a href="">
+              <i class="fa fa-cart-arrow-down mt-1"></i>
+          </a>
+            Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/samosi.png" width="250px" class="dishes">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Potato Samosi <br>Rs:/ 80</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button>
+            <a href="">
+              <i class="fa fa-cart-arrow-down mt-1"></i>
+          </a>
+            Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/shami.png" width="270px" class="dishes">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p >Chicken Shami <br>Rs:/ 100</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button>
+            <a href="">
+              <i class="fa fa-cart-arrow-down mt-1"></i>
+          </a>
+            Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/raita.jpg" width="225px" style="margin-right:30px;">
+      </div>
+      <div class=" para" style="margin-left: 70px;">
+          <p > Raitaa <br>Rs:/ 60</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button>
+            <a href="">
+              <i class="fa fa-cart-arrow-down mt-1"></i>
+          </a>
+            Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/pakora.jpg" width="300px" >
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Pakoray <br>Rs:/ 150</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button> <a href="">
+            <i class="fa fa-cart-arrow-down mt-1" style="color: red;"></i>
+        </a>Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/fries.png" width="250px" style="margin-left: 30px;">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Fries<br>Rs:/ 150</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button> <a href="">
+            <i class="fa fa-cart-arrow-down mt-1"></i>
+        </a>Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/chowmein.jpg" width="220px">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Chicken Chowmein <br>Rs:/ 150</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button> <a href="">
+            <i class="fa fa-cart-arrow-down mt-1"></i>
+        </a>Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/chiken karahi.png" width="200px">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Chicken Karahi <br>Rs:/ 250</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button> <a href="">
+            <i class="fa fa-cart-arrow-down mt-1"></i>
+        </a>Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/channay.png" width="250px">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Achari Channy <br>Rs:/ 150</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button> <a href="">
+            <i class="fa fa-cart-arrow-down mt-1"></i>
+        </a>Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/burger.jpg" width="250px">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Egg Burger <br>Rs:/ 150</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button> <a href="">
+            <i class="fa fa-cart-arrow-down mt-1"></i>
+        </a>Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/Achaar.jpg" width="250px">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Achaar <br>Rs:/ 50</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button> <a href="">
+            <i class="fa fa-cart-arrow-down mt-1"></i>
+        </a>Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/fresh-salad.jpg" width="230">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Fresh Salad <br>Rs:/ 50</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button> <a href="">
+            <i class="fa fa-cart-arrow-down mt-1"></i>
+        </a>Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/tea.png" width="200px">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Karak Tea <br>Rs:/ 50</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button> <a href="">
+            <i class="fa fa-cart-arrow-down mt-1"></i>
+        </a>Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/Tikki.gif" width="260">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Tikki <br>Rs:/ 50</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button> <a href="">
+            <i class="fa fa-cart-arrow-down mt-1"></i>
+        </a>Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 dishes">
+        <div class="img">
+          <img src="images/water.jpg" width="150px">
+        </div>
+        <div class="para" style="margin-left: 70px;">
+          <p>Fresh Water <br>Rs:/ 50</p>
+        </div>
+        <div class="button btn btn-primary">
+          <button> <a href="">
+            <i class="fa fa-cart-arrow-down mt-1"></i>
+        </a>Add To Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small stylish-color-dark pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-4 mx-auto">
+
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Quick Quest Foods</h5>
+          <p style="color: red;">An online food ordering website for delivery, collection and executive dine-in. Order
+            your favorite meal online from hundreds of restaurants in Pakistan.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About Website</h5>
+
+          <ul class="list-unstyled ">
+            <li>
+              <a href="index.html" style="color: red;">Home</a>
+            </li>
+            <li>
+              <a href="about.html" style="color: red;">About Us</a>
+            </li>
+            <li>
+              <a href="foods.html" style="color: red;">Menu</a>
+            </li>
+            <li>
+              <a href="contactus.html" style="color: red;">Contact us</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Resturant Services</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="login.html" style="color: red;">Food Delivery</a>
+            </li>
+            <li>
+              <a href="foods.html" style="color: red;">Foods For Takeaway</a>
+            </li>
+            <li>
+              <a href="login.html" style="color: red;">Online Delivery</a>
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Need Help</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="contactus.html" style="color: red;">Contact Us</a>
+            </li>
+            <li>
+              <a href="#!" style="color: red;">Referral FAQs</a>
+            </li>
+            <li>
+              <a href="#!" style="color: red;">FAQs</a>
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <hr>
+
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1">Register for free</h5>
+      </li>
+      <li class="list-inline-item">
+        <a href="Registration.html" class="btn btn-danger btn-rounded">Sign up!</a>
+      </li>
+    </ul>
+    <!-- Call to action -->
+
+    <hr>
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1">
+          <i class="fab fa-google-plus-g"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+          <i class="fab fa-linkedin-in"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-1">
+          <i class="fab fa-dribbble"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      Quick Quest Foods
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+
+
+</body>
+
+</html>

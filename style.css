@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+font-family: var(--main-font);
+}
+
+body{
+    margin: 0;
+    padding:0;
+    background: #FCE77D !important;
+    
+    
+}
+.page-footer{
+    background-color: #FFCA28;
+}
+header{
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #FFCA28;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px;
+}
+.logo{
+    color: #069370;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 0 20px;
+    background: #ccc;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight:700;
+    text-decoration: none;
+}
+/* .nav{
+    float: right;
+} */
+.clearfix{
+    clear: both;
+}
+
+
+
+
+
+
+.collaspe{
+    color: yellow;
+    background-color: yellow;
+}
+.d-block{
+    height: 300px;
+    width: 300px;
+}
+.activity-div-list h4{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Merriweather',  serif;
+    color: #2655e9;
+}
+.activity-div-list{
+    background-color: #f7f8fa;
+    box-shadow: 0px 8px 20px 0px #dcdcdc;
+}
+.footer{
+    
+    background-color:#FFCA28 ;
+}
+
+.seprator{
+    width: 70px;
+    height: 3px;
+    background-color:red;
+    display: block;
+}
+.contact-div i{
+    width:30px;
+    height:30px;
+    padding:9px 7px;
+    color:white;
+    background-color:#f33535;
+    border-radius:100%;
+}
+
+.navbar{
+    background-color:#FFCA28 
+
+}
+img{
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+
+
+/* .navbar{
+    background-color:#FFCA28 ;
+}
+.navbar-brand{
+    color: red;
+    font-weight: bold;
+}
+.nav-link{
+    color: white;
+    font-weight: bold !important;
+}
+.image{
+    height: 80px;
+    width: 100px;
+}
+.navbar-nav li a{
+    color: red;
+}
+.navbar-nav li :hover{
+    background-color: rgb(114, 215, 233);
+    
+
+} */
+.active{
+    color: yellow;
+}
+.boxes{
+    width: 90%;
+    padding: 10px;
+    /* background:orange; */
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    /* float: left; */
+margin: 0px 10px;
+transition: 1s;
+
+}
+
+.box:hover{
+    transform: scale(1.3);
+    background: #ff800a;
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2;
+}
+:root{
+    --main-font:'Pacifico', cursive;
+}
+/* @media only screen and ( min-width : 360px){
+    .dishes{
+        margin-left: 40px !important;
+        width: 80% !important;
+    }
+ } */

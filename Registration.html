@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    
+    <link href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); */
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            /* font-family: 'Righteous', cursive;; */
+            font-family: var(--main-font);
+        }
+        :root{
+    --main-font:'Pacifico', cursive;
+}
+.navbar{
+    background-color:#FFCA28 
+}
+        body{
+            background: #FFCA28;
+            padding: 0 10px;
+        }
+        .wrapper{
+            max-width: 500px;
+            width: 100%;
+            background: #FCE77D !important;
+            margin: 20px auto;
+            padding: 30px;
+            box-shadow: 1px 1px 2px rgba(0, 0,0, 125);
+
+        }
+        .wrapper .title{
+       font-size: 24px;
+       font-weight: 700;
+       margin-bottom: 25px;
+       color: red;
+       text-transform: uppercase;
+       text-align: center;
+
+        }
+        .wrapper .form{
+            width: 100%;
+        }
+       .wrapper .form .input-field{
+           margin-bottom: 15px;
+           display: flex;
+           align-items: center;
+       }
+       .wrapper .form .input-field label{
+           width: 200px;
+           color: red;
+           margin-right: 10px;
+           font-size: 14px;
+
+       }
+       .wrapper .form .input-field .input,
+       .wrapper .form .input-field .textarea
+       {
+           width: 100%;
+           outline: none;
+           border: 1px solid #d5dbd9;
+           font-size: 15px;
+           padding: 8px 10px;
+           border-radius: 3px;
+           transition: all 0.3s ease;
+       }
+       .wrapper .form .input-field .textarea{
+           resize: none;
+           height: 125px;
+       }
+       .wrapper .form .input-field .custom-select{
+           position: relative;
+           width: 100%;
+           height: 37px;
+       }
+       .wrapper .form .input-field .custom-select select{
+           appearance: none;
+           border: 1px solid #d5dbd9;
+           width: 100%;
+           height: 100%;
+           padding: 8px 10px;
+           border-radius: 3px;
+           outline: none;
+           color: red;
+       }
+       .wrapper .form .input-field .custom-select :before{
+            content: "";
+            position: absolute;
+            top: 12px;
+            right: 10px;
+            border: 8px solid;
+            border-color: #d5dbd9 transparent transparent transparent;
+               pointer-events: none;
+
+       }
+       .wrapper .form .input-field .input:focus,
+       .wrapper .form .input-field .textarea:focus,
+       .wrapper .form .input-field select:focus
+       {
+           border: 1px solid red;
+
+       }
+       .wrapper .form .input-field p{
+        font-size: 14px;
+        color: red;
+       }
+       .wrapper .form .input-field .check{
+           width: 15px;
+           height: 15px;
+           position: relative;
+           cursor: pointer;
+           
+
+       }
+       .wrapper .form .input-field .check input[type="checkbox"]{
+           position: absolute;
+           top: 0;
+           left: 0;
+           opacity: 0;
+       }
+       .wrapper .form .input-field .check .checkmark{
+            width: 15px;
+            height: 15px;
+            border: 1px solid #fec107;
+            display: block;
+            position: relative;
+            background: #fec107;
+            
+       }
+       .wrapper .form .input-field .check .checkmark:before{
+            position: absolute;
+            top: 1px;
+            left: 2px;
+            width: 5px;
+            height: 2px;
+            border: 2px solid;
+            border-color: #fff #fff #fff #fff;
+            transform: rotate(-45deg);
+            display: none;
+       }
+       .wrapper .form .input-field .check input[type="checkbox"]:checked .checkmark{
+           background: #fec107;
+       }
+       .wrapper .form .input-field .check input[type="checkbox"]:checked .checkmark:before{
+           display: block;
+       }
+       .wrapper .form .input-field .btn{
+           width: 100%;
+           padding: 8px 10px ;
+           font-size: 15px;
+           border: 0;
+           background: #fec107;
+           color: red;
+           cursor: pointer;
+           border-radius: 3px;
+           outline: none;
+
+       }
+       .wrapper .form .input-field:last-child{
+        margin-bottom: 0;
+       }
+       .wrapper .form .input-field .btn:hover{
+           background: #ffd658;
+       }
+    </style>
+</head>
+<body class="container">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="index.html"> <img style="height: 80px; " src="images/delivery.png">    Quick Quest Foods</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+         
+         
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="foods.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="Registration.html">Registration </a>
+              </li>
+            </ul>
+          
+        </div>
+      </nav>
+    
+    
+    <div class="wrapper">
+        <div class="title">
+            Registration Form
+        </div>
+        <div class="form">
+            <div class="input-field">
+                <label> First Name</label>
+                <input type="text" class="input" >
+            </div>
+            <div class="input-field">
+                <label> Last Name</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input-field">
+                <label>Password</label>
+                <input type="password" class="input" required>
+            </div>
+            <div class="input-field">
+                <label> Confirm Password</label>
+                <input type="password" class="input" required>
+            </div>
+            <div class="input-field">
+                <label>Gender</label>
+                <div class="custom-select">
+                    <select>
+                        <option valye="">Select</option>
+                        <option valye="Male">Male</option>
+                        <option valye="Female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-field">
+                <label>Email Address</label>
+                <input type="email" class="input" required>
+            </div>
+            <div class="input-field">
+                <label> Phone Number</label>
+                <input type="numeric" class="input" required>
+            </div>
+            <div class="input-field">
+                <label>Address</label>
+                <textarea class="textarea"></textarea>
+            </div>
+            <div class="input-field">
+                <label>Postal Code</label>
+                <input type="text" class="input" required>
+            </div>
+            <div class="input-field terms">
+                <label class="check">
+                <input type="checkbox" class="input" >
+                <span class="checkmark"></span>
+            </label>
+            <p>Agree to terms and conditions</p>
+            </div>
+            <div class="input-field">
+        
+                <input type="submit" value="Register" class="btn">
+            </div>
+        </div>
+    </div>
+
+  
+</body>
+</html>
